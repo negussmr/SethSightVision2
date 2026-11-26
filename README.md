@@ -148,8 +148,10 @@ GitHub shows a **"Cite this repository"** button from [`CITATION.cff`](CITATION.
 
 ## License
 
-[FILL IN: e.g. MIT. Add a LICENSE file to the repository.]
+
 
 ## Contact
 
-Justine Clarke Caguete: [FILL IN: email or ORCID]
+jcperena.2009@gmail.com 
+mioshioka@gmail.com 
+kunmoshi521@gmail.com
