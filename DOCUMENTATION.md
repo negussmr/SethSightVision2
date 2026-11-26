@@ -132,30 +132,6 @@ python server.py
 - [ ] Library versions (`requirements.txt`)
 - [ ] LICENSE file
 
-## 8. How people can cite you (and find your name)
 
-Your handles (`negussmr`, `seth-caguete`) do not match your name, so make the link explicit:
 
-1. Use "Justine Clarke Caguete" in the README, CITATION.cff, model card, and the Name field of your GitHub and Roboflow profiles.
-2. Keep `CITATION.cff` in the repo root so GitHub shows "Cite this repository".
-3. Get a free **ORCID** (https://orcid.org) and add it to `CITATION.cff` and the README.
-4. Get a **DOI** with Zenodo: connect GitHub at https://zenodo.org, enable the repo, then publish a GitHub Release.
-5. Standard citation form is surname first: *Caguete, J. C.* (APA) or *Caguete, Justine Clarke* (BibTeX).
 
-## 9. Repository cleanup suggestions
-
-I found these while reading the repo:
-
-- **Missing files at the top level:** `server.py` imports `utils`, `logger`, `recorder`, and `classes`, but those files (and `requirements.txt`, `models/`) are only inside `ESP32_YOLO.zip`. Cloning the repo and running `server.py` directly will fail. Extract the zip's contents into the repo (as folders, not a zip).
-- **Duplicate copies:** `server.py`, `config.py`, `detection.py`, `esp32_cam.ino` and `README.md` exist both at the top level and inside the zip. Keep one copy.
-- **File names:** `kay kerwin.py` (contains a space) and `kerwinHAHAHAH.cpp` are hard for others to understand. Consider names like `flask_detect_server.py` and `esp32_http_client.cpp`.
-- **Credit:** if "Kerwin" wrote or contributed to those two files, credit them in the README and `CITATION.cff` (add them as an author).
-- **Secrets:** the Wi-Fi fields currently hold placeholders, which is good. Keep it that way, and never commit API keys.
-- **No .gitignore:** add one (`venv/`, `__pycache__/`, `models/*.pt`, `recordings/`, `logs/`).
-- **No LICENSE** file yet.
-
-## 10. Changelog
-
-| Version | Date | Notes |
-|---|---|---|
-| 1.0.0 | [FILL IN] | Initial release |
