@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software or model in your research, please cite it as below."
+type: software
+title: "SethSightVision2: ESP32-CAM Live Detection and ViT Fabric Classification"
+authors:
+  - family-names: "Caguete"
+    given-names: "Justine Clarke"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # add once you have an ORCID
+    # email: "your-email@example.com"
+    # affiliation: "Your School / Institution"
+repository-code: "https://github.com/negussmr/SethSightVision2"
+url: "https://github.com/negussmr/SethSightVision2"
+abstract: >-
+  SethSightVision2 combines an ESP32-CAM live-video pipeline with real-time
+  YOLO object detection, and a fabric classifier (cotton, denim, linen, silk,
+  wool) built by fine-tuning a Vision Transformer (ViT-Base, patch 16, 224x224,
+  ImageNet-21k pre-trained) on Roboflow. Roboflow model ID:
+  seth-caguete/fabric-reference-library-5-vit-base-patch16-224-in21k-t2
+  (dataset version 5, training run 2).
+keywords:
+  - fabric classification
+  - image classification
+  - vision transformer
+  - ESP32-CAM
+  - YOLO
+  - Roboflow
+  - computer vision
+# license: MIT            # replace with your actual license, and add a LICENSE file
+version: "1.0.0"
+date-released: "2026-11-26"   # update to your actual release date
+# doi: "10.5281/zenodo.XXXXXXX"   # add after creating a Zenodo release (see DOCUMENTATION.md)
+references:
+  - type: article
+    title: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"
+    authors:
+      - {family-names: "Dosovitskiy", given-names: "Alexey"}
+      - {family-names: "Beyer", given-names: "Lucas"}
+      - {family-names: "Kolesnikov", given-names: "Alexander"}
+      - {family-names: "Weissenborn", given-names: "Dirk"}
+      - {family-names: "Zhai", given-names: "Xiaohua"}
+      - {family-names: "Unterthiner", given-names: "Thomas"}
+      - {family-names: "Dehghani", given-names: "Mostafa"}
+      - {family-names: "Minderer", given-names: "Matthias"}
+      - {family-names: "Heigold", given-names: "Georg"}
+      - {family-names: "Gelly", given-names: "Sylvain"}
+      - {family-names: "Uszkoreit", given-names: "Jakob"}
+      - {family-names: "Houlsby", given-names: "Neil"}
+    journal: "International Conference on Learning Representations (ICLR)"
+    year: 2021
+    url: "https://arxiv.org/abs/2010.11929"
